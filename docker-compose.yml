@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  aws-sample:
+    build:
+      context: .
+      target: production
+    container_name: aws-sample
+    restart: always
+    ports:
+      - '4000:4000'
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
+    networks:
+      - aws-sample-network
+
+networks:
+  aws-sample-network:
+    name: aws-sample-network
+    driver: bridge
