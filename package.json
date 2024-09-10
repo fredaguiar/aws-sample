@@ -1,23 +1,20 @@
 {
   "name": "aws-sample",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.ts",
+  "description": "AWS, EC2, S3, Jenkins, Elastic Beanstalk",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.ts",
-    "start": "node dist/src/index.js"
+    "dev": "nodemon ./src/index.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.20.0"
   },
   "devDependencies": {
-    "eslint": "^9.0.0",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.4"
   }
 }

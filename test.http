@@ -2,5 +2,5 @@
 @baseUrl = https://localhost:4000
 
 ### Test Ngnix
-GET {{baseUrl}}/test
+GET https://localhost:4000/test
 
