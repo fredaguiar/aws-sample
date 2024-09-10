@@ -1,6 +1,13 @@
 
-@baseUrl = https://localhost:4000
+@baseUrl = http://localhost:4000
 
 ### Test Ngnix
-GET https://localhost:4000/test
+GET {{baseUrl}}/test
 
+### Test message
+POST {{baseUrl}}/msg
+content-type: application/json
+
+{
+    "msg": "YES!"
+}

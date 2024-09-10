@@ -4,7 +4,8 @@
   "description": "AWS, EC2, S3, Jenkins, Elastic Beanstalk",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js"
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
   },
   "author": "",
   "license": "ISC",

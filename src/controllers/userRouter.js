@@ -3,7 +3,12 @@ const express = require('express');
 const userRouter = express.Router();
 
 userRouter.get('/test', (req, res, next) => {
-  return res.send('OK');
+  return res.send('OK!');
+});
+
+userRouter.post('/msg', (req, res, next) => {
+  const msg = req.body.msg;
+  return res.send(msg);
 });
 
 module.exports = { userRouter };
